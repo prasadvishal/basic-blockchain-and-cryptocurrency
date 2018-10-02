@@ -102,13 +102,13 @@ class Blockchain { // Blockchain reprents the current blockchain containing arra
 
 let blockChain = new Blockchain();
 blockChain.addBlock(new Block(1, (new Date).toString(), {
-    sender: "Shukla Ji",
-    receiver: "Suraj Sahab",
+    sender: "Ygritte",
+    receiver: "Jon Snow",
     amount: 100
 }));
 blockChain.addBlock(new Block(2, (new Date).toString(), {
-    sender: "Suraj Sahab",
-    receiver: "Bhabhi Ji",
+    sender: "Jon Snow",
+    receiver: "Daenerys Targaryen",
     amount: 150
 }));
 
@@ -125,8 +125,8 @@ console.log(`
 
 
 blockChain.chain[1].data = {
-    sender: "Shukla Ji",
-    receiver: "Suraj Sahab",
+    sender: "Ygritte",
+    receiver: "Jon Snow",
     amount: 200
 };
 blockChain.chain[1].hash = blockChain.chain[1].calculateHash();
