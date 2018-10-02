@@ -122,22 +122,22 @@ class Blockchain { // Blockchain reprents the current blockchain containing arra
 let blockChain = new Blockchain();
 console.log("Mining First Block... Please Wait.")
 blockChain.addBlock(new Block(1, (new Date).toString(), {
-    sender: "Shukla Ji",
-    receiver: "Suraj Sahab",
+    sender: "Ygritte",
+    receiver: "Jon Snow",
     amount: 100
 }));
 
 console.log("Mining Second Block... Please Wait.")
 blockChain.addBlock(new Block(2, (new Date).toString(), {
-    sender: "Suraj Sahab",
-    receiver: "Bhabhi Ji",
+    sender: "Jon Snow",
+    receiver: "Daenerys Targaryen",
     amount: 150
 }));
 
 console.log("Mining Third Block... Please Wait.")
 blockChain.addBlock(new Block(2, (new Date).toString(), {
-    sender: "Shubham",
-    receiver: "Akshay",
+    sender: "Tyrion Lannister",
+    receiver: "Bronn",
     amount: 750
 }));
 
