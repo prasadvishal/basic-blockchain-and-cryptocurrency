@@ -171,15 +171,15 @@ class Blockchain {
 }
 
 let blockChain = new Blockchain();
-blockChain.createTransaction(new Transaction('Shukla Ji Ka Address', 'Suraj Sahab Ka Address', 100));
+blockChain.createTransaction(new Transaction('Ygritte Address', 'Jon Snow Address', 100));
 //console.log('\nPending Transactions: ', blockChain.pendingTransactions);
-blockChain.createTransaction(new Transaction('Suraj Sahab Ka Address', 'Bhabhi Ji Ka Address', 50));
+blockChain.createTransaction(new Transaction('Jon Snow Address', 'Daenerys Targaryen Address', 50));
 //console.log('\nPending Transactions: ', blockChain.pendingTransactions);
 console.log('\n Mining First Transaction...');
-blockChain.minePendingTransactions('Vishal Ka Address ');
+blockChain.minePendingTransactions('Tyrion Lannister Address ');
 
-console.log('\nBalance of Vishal is', blockChain.getBalanceOfAddress('Vishal Ka Address '));
+console.log('\nBalance of Tyrion Lannister is', blockChain.getBalanceOfAddress('Tyrion Lannister Address '));
 console.log('\n Mining Second Transaction...');
-blockChain.minePendingTransactions('Vishal Ka Address ');
+blockChain.minePendingTransactions('Tyrion Lannister Address ');
 
-console.log('\nBalance of Vishal is', blockChain.getBalanceOfAddress('Vishal Ka Address '));
+console.log('\nBalance of Tyrion Lannister is', blockChain.getBalanceOfAddress('Tyrion Lannister Address '));
